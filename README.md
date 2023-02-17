@@ -19,3 +19,17 @@ CREATE EXTENSION
 postgres=# CREATE EXTENSION duckdb_fdw;
 CREATE EXTENSION
 ```
+
+## Usage
+
+This image has been pushed to the GitHub Container Registry (ghcr.io). In order to pull it you will first need to log into ghcr.io with your username and an access token that has `package:read` permission.
+
+```bash
+echo "TOKEN" | docker login ghcr.io -u GITHUB_USERNAME --password-stdin
+```
+
+Once logged in you can use `docker pull` as usual (not domain prefix).
+
+```bash
+docker pull ghcr.io/johnallen3d/postgres-duckdb:latest
+```
