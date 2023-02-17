@@ -31,5 +31,5 @@ echo "TOKEN" | docker login ghcr.io -u GITHUB_USERNAME --password-stdin
 Once logged in you can use `docker pull` as usual (not domain prefix).
 
 ```bash
-docker pull ghcr.io/johnallen3d/postgres-duckdb:latest
+docker pull ghcr.io/johnallen3d/docker-postgres-duckdb:latest
 ```
